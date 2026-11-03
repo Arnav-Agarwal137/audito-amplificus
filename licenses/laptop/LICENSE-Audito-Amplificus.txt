@@ -1,0 +1,13 @@
+Audito Amplificus - licence
+
+Required Notice: Copyright (c) 2026 Arnav Agarwal (https://github.com/Arnav-Agarwal137)
+
+Audito Amplificus is licensed under the PolyForm Noncommercial License 1.0.0. The full text is in
+polyform-noncommercial-1.0.0.txt, next to this file. Use, change and share it free for any non-commercial
+purpose; anything commercial needs a separate written licence from the owner (see COMMERCIAL.md).
+
+This licence does not cover ApoSetup (portable\apo-setup), which is licensed GPL-2.0-or-later: its source, COPYING
+and NOTICE.md are in portable\apo-setup\source.
+
+The other parts shipped with the app keep their own licences; the full texts are in this folder and listed in
+THIRD-PARTY-NOTICES.md, one folder up.

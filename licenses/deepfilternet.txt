@@ -1,0 +1,5 @@
+DeepFilterNet (Rikorose/DeepFilterNet) 0.5.6, used by tools/denoise/denoise.py for "Clean a talk" on the laptop.
+Code licence: MIT (package metadata, pip show, 28 Sep 2026; the repository offers MIT or Apache-2.0). deepfilterlib (its compiled part) states no
+licence in its metadata. Model weights DeepFilterNet3: licence NOT STATED by the publisher (README licenses the code
+only; checked 29 Sep 2026). Downloaded by DeepFilterNet at first use to %LOCALAPPDATA%\DeepFilterNet and NEVER bundled
+with this app. Treated as not cleared for paid use: -PauditoEdition=paid hides clean a talk and makes it refuse to run.

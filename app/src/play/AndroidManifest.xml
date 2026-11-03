@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Play Store build only (-PauditoStore=play). Google's policy 9888379 lists chat/VoIP, safety, task automation and
+     device companions for this permission; sound apps are not on the list, so the Play build drops it and opens the
+     battery settings list instead (MainActivity.openBatterySetting). The sideloaded build keeps the one-tap box. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" tools:node="remove" />
+</manifest>

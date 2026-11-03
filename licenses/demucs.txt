@@ -1,0 +1,6 @@
+Demucs (facebookresearch/demucs), used by tools/karaoke/karaoke.py for karaoke + BGM extraction on the laptop.
+Code licence: MIT (README, fetched 28 Sep 2026).
+Pretrained weights htdemucs: NOT MIT. The author (adefossez) states the weights "are not covered by the MIT license,
+and are provided only for scientific purposes" (github.com/facebookresearch/demucs/issues/327, read 29 Sep 2026).
+They are downloaded by Demucs itself at first use and are NEVER bundled with this app. Not allowed in any paid build:
+-PauditoEdition=paid hides karaoke and makes it refuse to run (desktop Edition.kt).

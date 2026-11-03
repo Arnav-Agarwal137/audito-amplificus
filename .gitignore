@@ -1,0 +1,23 @@
+build/
+.gradle/
+.kotlin/
+local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+captures/
+.idea/
+*.iml
+*.tflite
+*.wav
+*.mp3
+windows/helper/bin/
+windows/helper/obj/
+# density_ab.py scratch outputs (recordings, per-run plan)
+tools/windows-spike/density_a.npy
+tools/windows-spike/density_plan.json
+tools/windows-spike/_mic_last.npz
+tools/windows-spike/*.npy
+windows/apo-setup/bin/
+windows/apo-setup/obj/

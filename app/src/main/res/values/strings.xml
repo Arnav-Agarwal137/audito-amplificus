@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Audito Amplificus</string>
+    <string name="launcher_name">Amplificus</string>
+    <string name="channel_engine">While it is tuning</string>
+    <string name="channel_alerts">Loud-sound warnings</string>
+</resources>

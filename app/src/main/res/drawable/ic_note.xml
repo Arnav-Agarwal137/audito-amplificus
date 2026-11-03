@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Status-bar icon: must be a single flat colour (Android draws it white), so the cloud as three rings. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#FFFFFFFF" android:pathData="M8.5,14.5m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.75" android:pathData="M12,9m-4.5,0a4.5,4.5 0,1 1,9 0a4.5,4.5 0,1 1,-9 0" />
+    <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.9" android:pathData="M16,14.5m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+</vector>

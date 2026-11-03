@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mid-grey outline: readable on a light AND a dark notification shade, whichever the phone draws. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="20dp" />
+    <solid android:color="#22888888" />
+    <stroke android:width="1dp" android:color="#99888888" />
+</shape>

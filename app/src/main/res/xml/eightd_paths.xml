@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 9 only: the 8D copy is saved in the app's own music folder and shared to a player through this (EightDMaker.save). -->
+<paths>
+    <external-files-path name="music" path="Music/" />
+</paths>

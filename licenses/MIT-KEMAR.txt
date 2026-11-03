@@ -1,0 +1,6 @@
+MIT KEMAR HRTF measurements (compact set) - used by tools/eightd/eightd.py for the 8D copy.
+Source: https://sound.media.mit.edu/resources/KEMAR.html (downloaded 29 Sep 2026, compact.zip, to D:/dev/hrtf)
+Terms (as quoted in research/data-models-standards.md section 6): "provided free with no restrictions on use,
+provided the authors are cited when the data is used in any research or commercial application".
+Citation: Bill Gardner and Keith Martin, "HRTF Measurements of a KEMAR Dummy-Head Microphone",
+MIT Media Lab Perceptual Computing Technical Report #280, May 1994.
