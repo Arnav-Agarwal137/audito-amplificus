@@ -1,22 +1,71 @@
-# Audito Amplificus: Smart Sound
+# Audito Amplificus
 
-A sound enhancer that learns your taste, on your device.
+## Get more from the headphones you already own.
 
-Automatic sound tuning for what you are already listening to. It measures the music, video or talk that is playing,
-works out what kind of sound it is, and adjusts the tone for the earbuds or speaker you are using. There are two apps
-that share one tuning "brain":
+I wanted better sound without making another pair of expensive earbuds the first step. I also did not want to spend every song moving an equaliser around.
 
-- **Phone (Android 9 or newer)** - tunes the whole phone's sound, keeps a weekly listening-level estimate after the
-  WHO / ITU safe-listening guidance, makes 8D copies of songs you own, and learns what you like.
-- **Laptop (Windows 10/11)** - tunes the whole laptop's sound through Equalizer APO, and can make karaoke / music-only
-  copies, 8D copies and cleaned-up copies of talks from files you pick.
+Audito measures what is playing, adjusts the sound, and lets you teach it what you like. The Android and Windows apps share the same tuning brain.
 
-**Private by design.** The phone app has no internet permission, never opens the microphone, and never records or
-saves sound. The laptop app listens only to what the laptop itself is playing (loopback), never to a microphone, and
-sends nothing anywhere. Details: [PRIVACY.md](PRIVACY.md).
+**[Download the Android APK](https://github.com/Arnav-Agarwal137/audito-amplificus/releases/download/v0.1.17/Audito-Amplificus-0.1.17.apk) · [Release notes](https://github.com/Arnav-Agarwal137/audito-amplificus/releases/tag/v0.1.17) · [Build for Windows](docs/BUILDING.md#build-the-laptop-app)**
 
-**Not a medical device.** The listening-level figures are a general guide, not a hearing test and not medical advice.
-See [DISCLAIMER.md](DISCLAIMER.md).
+<p align="center"><img src="docs/images/audito-android.png" alt="Audito's Android interface with automatic tuning, listening estimates and simple settings" width="320"></p>
+
+*Android development capture. The release's layout may differ slightly.*
+
+## Give it one song
+
+1. Install the APK on **Android 9 or newer**. If your browser asks, allow installation from that source for this download; you can turn that permission off afterwards.
+2. Open Audito and follow its setup pages. Each permission has an explanation.
+3. Play something in the app you normally use and switch tuning on.
+4. Try **Hear the difference**. There is a bundled demo song if nothing is playing.
+5. Adjust bass, warmth, voice clarity or treble if you want, then keep a sound you like.
+
+The before/after comparison is designed to match loudness, so louder does not automatically win. How much difference you hear depends on your phone, output device, music and settings. This is sound processing, not a promise to reproduce another headphone's hardware or noise cancellation.
+
+## What it does
+
+- Tunes the audio already playing instead of asking you to switch music players.
+- Keeps preferences for different listening setups and learns from the settings you keep.
+- Gives a listening-level estimate and a weekly exposure guide on Android.
+- Offers optional 8D file processing; Windows tools can also make music-only copies or clean up talks when their separate dependencies are installed.
+
+**Android:** a public APK is available. **Windows 10/11:** the app is in the source tree and uses Equalizer APO; this repo currently has no public Windows installer. **iPhone:** no version is available.
+
+## The privacy part is worth reading
+
+The Android app's manifest declares **no internet permission**. Its playback analyser uses Android's Visualizer to measure the output mix. It does not open a microphone recorder or save audio recordings.
+
+Android still calls the required `RECORD_AUDIO` permission microphone access. That name is alarming, so setup explains why it is requested: output analysis. Inspect [the manifest](app/src/main/AndroidManifest.xml) and [Analyzer.kt](app/src/main/java/com/arnavagarwal/sound/engine/Analyzer.kt).
+
+Other permissions cover recognising connected headphones, reading the current media session and keeping tuning running. Windows measures playback through loopback. Optional Windows file tools may download dependencies or model weights separately. See [PRIVACY.md](PRIVACY.md).
+
+Listening estimates are approximate. Audito is not a hearing test or a medical device; see [DISCLAIMER.md](DISCLAIMER.md).
+
+## For people who want to inspect the build
+
+The phone UI is Kotlin and Jetpack Compose. Shared Kotlin code in `core/` makes tuning decisions; Android audio effects and the Windows playback chain apply them on their respective platforms.
+
+```text
+Playing audio -> playback measurements -> shared tuning brain -> output processing
+                                              ^
+                                      settings you choose to keep
+```
+
+[Build instructions, tests and uninstall details](docs/BUILDING.md) include Android, Windows, optional file tools and signing with your own key. Tests cover the shared brain, interface wording and privacy constraints; sound preference still needs a human listener.
+
+The APK is **v0.1.17**, about **3.6 MB**. GitHub reports this SHA-256:
+
+```text
+914dc2673728cd319a86377afa9fc468e78ea095d408bfe1c76d118ab921cf4a
+```
+
+The checksum identifies the published file; it is not a security certification. Download from the release above. If the effect does not reach an output device, report the OS version and headphone connection type in [an issue](https://github.com/Arnav-Agarwal137/audito-amplificus/issues).
+
+## Credits and permissions
+
+Libraries, font, demo song, HRTF data and optional tools have their own terms in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Third-party model weights are not bundled; the app's licence cannot grant rights to them.
+
+Built by [Arnav Agarwal](https://github.com/Arnav-Agarwal137). Audito is independent of headphone manufacturers, music services and their products.
 
 ## Licence
 
@@ -31,64 +80,3 @@ this policy does not retroactively prohibit their previously permitted use or di
 Full terms: [LICENSE](LICENSE). Permission requests: [GitHub issues](https://github.com/Arnav-Agarwal137/audito-amplificus/issues).
 
 **Exception:** `windows/apo-setup/` remains GPL-2.0-or-later under its own COPYING and NOTICE.md.
-
-## Build the phone app
-
-You need JDK 21 and the Android SDK (compile SDK 37).
-
-```
-./gradlew :app:assembleDebug        # app/build/outputs/apk/debug/app-debug.apk
-./gradlew :app:testDebugUnitTest    # unit tests
-./gradlew :core:test                # the shared tuning brain's tests
-```
-
-A release build is signed only if you point it at your own signing file: `-PsoundSigning=<path to a .properties file>`
-with `storeFile`, `storePassword`, `keyAlias`, `keyPassword`. No key is included in this repository.
-
-## Build the laptop app
-
-You need JDK 21, the .NET 8 SDK, and [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) installed on the
-output device you listen on. Pick one folder for the laptop's tools and tell the app about it with the environment
-variable `AUDITO_TOOLS` (or `-PauditoTools=<folder>` when building). If you set nothing it uses `D:/dev`.
-
-```
-dotnet build windows/helper -c Release -o <tools>/sound-builds/helper
-dotnet build windows/apo-setup -c Release -o <tools>/sound-builds/apo-setup
-./gradlew :desktop:run -PauditoTools=<tools>
-```
-
-The tuning works with just those. The three file tools are optional and need things you install yourself:
-
-| Tool | Needs, inside `<tools>` |
-|---|---|
-| 8D copy | `demucs-venv` (Python 3.11 + numpy + scipy) and the MIT KEMAR compact set unpacked in `hrtf/` |
-| Karaoke / music only | `demucs-venv` with [Demucs](https://github.com/facebookresearch/demucs) and PyTorch; `ffmpeg` on PATH |
-| Clean a talk | `denoise-venv` with [DeepFilterNet](https://github.com/Rikorose/DeepFilterNet) and PyTorch; `ffmpeg` on PATH |
-
-**Model weights are not included and must never be redistributed with this app.** Demucs and DeepFilterNet download
-their own weights on first use, under their own terms (see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)). The
-Demucs weights are for research only, so a build made for sale must leave karaoke and clean-a-talk out:
-`-PauditoEdition=paid` hides both and makes them refuse to run.
-
-## Removing it
-
-- **Phone:** uninstall the app; everything it stored goes with it.
-- **Laptop:** uninstall "Audito Amplificus" from Windows' Installed apps. That removes the app. Three things stay
-  until you remove them, because they live outside the app's folder:
-  1. **Equalizer APO** - uninstall it from Installed apps too (it switches its effect off on every output).
-  2. **The sound-setup task** - if you pressed "Set up the sound part", a task called by ApoSetup switches Equalizer
-     APO on for new headphones. Before uninstalling, run `portable\apo-setup\ApoSetup.exe undo` and then
-     `ApoSetup.exe task-remove` from an administrator terminal in the app's folder, then delete the folder
-     `C:\Program Files\Audito Amplificus` (the task's own copy of ApoSetup).
-  3. **Your data** - delete `%LOCALAPPDATA%\SoundApp` and the registry key
-     `HKEY_CURRENT_USER\Software\JavaSoft\Prefs\com\arnavagarwal\sound`.
-
-The licences, privacy policy and these terms are also installed with the laptop app, in its `legal` folder (Start
-menu > "Audito Amplificus - licences and privacy").
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). Questions, bugs and licence requests: open an issue on GitHub.
-
-Audito Amplificus is an independent project. It is not connected to any music service, earbud or laptop maker, or to
-any book, film or game.
