@@ -1,7 +1,9 @@
 # Third-party notices - Audito Amplificus
 
-Audito Amplificus itself is Copyright (c) 2026 Arnav Agarwal, PolyForm Noncommercial 1.0.0 (see LICENSE). It uses or
-works with the following, each under its own terms. Full texts are in the `licenses/` folder, inside the phone app
+Audito Amplificus itself is Copyright (c) 2026 Arnav Agarwal. Newly licensed original work uses the root LICENSE;
+earlier PolyForm grants remain in force (see LICENSE-HISTORY.md). It uses or works with the following, each
+under its own terms. Full texts and in-app credits are described below.
+Full texts are in the `licenses/` folder, inside the phone app
 (Settings > Privacy, safety and credits > Read the licences), and in the `legal` folder of the installed laptop app
 (Start menu > "Audito Amplificus - licences and privacy").
 

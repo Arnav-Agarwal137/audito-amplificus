@@ -1,77 +1,69 @@
-# PolyForm Noncommercial License 1.0.0
+Arnav Agarwal Noncommercial Use and Controlled Distribution Licence 1.0
+Effective for newly licensed original work from 9 November 2026
+Copyright (c) 2026 Arnav Agarwal. All rights reserved except as expressly granted.
 
-<https://polyformproject.org/licenses/noncommercial/1.0.0>
+1. Scope and existing rights
+This licence applies only to original material owned by Arnav Agarwal and offered
+under these terms. It does not withdraw, replace, or restrict permissions already
+granted under an earlier licence. Material previously released under MIT,
+PolyForm Noncommercial, or another licence remains usable under those earlier
+grants. See LICENSE-HISTORY.md. These restrictions govern only rights not already
+granted and new original material offered under this licence.
 
-## Acceptance
+2. Free noncommercial use and private improvements
+You may download, run, study, and make private modifications to the covered
+material, without payment, solely for noncommercial purposes. You may use private
+modifications yourself for those purposes. No transfer of copyright is made.
 
-In order to get any license under these terms, you must agree to them as both strict obligations and conditions to all your licenses.
+3. Share the official link; permission for copies
+You may freely share links to the owner's official repository, website, and
+downloads. Without prior written permission from Arnav Agarwal, you may not
+redistribute copies of the covered material, publish modified versions, operate
+a public mirror or hosted copy, sublicense it, or include it in another publicly
+distributed product. This applies to free distribution as well as paid distribution.
+GitHub's contractual rights to view and fork public repositories are not restricted
+by this licence; a GitHub fork does not itself grant permission for other uses.
 
-## Copyright License
+4. No commercial use without a separate written agreement
+No commercial use is granted. This includes selling copies, charging for access,
+subscriptions, advertising-supported copies or hosting, inclusion in a paid product
+or service, commercial internal use, and use primarily directed toward commercial
+advantage or monetary compensation. Free access does not make a commercial use
+noncommercial. A commercial licence must be obtained separately from the owner.
 
-The licensor grants you a copyright license for the software to do everything you might do with the software that would otherwise infringe the licensor's copyright in it for any permitted purpose.  However, you may only distribute the software according to [Distribution License](#distribution-license) and make changes or new works based on the software according to [Changes and New Works License](#changes-and-new-works-license).
+5. Authorship and branding
+Keep the owner's copyright and applicable licence notices. Do not represent the
+original work as your own, remove attribution, imply endorsement, or use the
+project's name, logo, or the owner's identity to market an unauthorised version.
+No trademark rights are granted. Approved distributions must identify modifications
+and their authors without concealing the original authorship.
 
-## Distribution License
+6. Improvements and permission requests
+Bug reports and descriptions of proposed improvements are welcome. Contact the
+owner through the official repository's issues before publishing or sending a
+modified copy. A request, an issue response acknowledging receipt, or silence is
+not permission: approval must expressly authorise the proposed distribution or
+commercial use. Do not post confidential information in public issues. Submitting
+an idea or patch does not automatically transfer its author's copyright; terms for
+code contributions must be agreed before acceptance.
 
-The licensor grants you an additional copyright license to distribute copies of the software.  Your license to distribute covers distributing the software with changes and new works permitted by [Changes and New Works License](#changes-and-new-works-license).
+7. Third-party material and legal exceptions
+Third-party code, data, fonts, rules, model weights, libraries, and other components
+keep their own licences. Nothing here restricts rights those licences independently
+grant, or rights that applicable law does not allow to be restricted. Permission
+from this project's owner cannot grant rights belonging to third parties.
 
-## Notices
+8. No warranty and limitation of liability
+The covered material is provided AS IS, without warranty of any kind, including
+merchantability, fitness for a particular purpose, accuracy, and noninfringement.
+To the fullest extent permitted by law, the owner is not liable for claims or
+damages arising from its use or distribution. Applicable mandatory rights remain.
 
-You must ensure that anyone who gets a copy of any part of the software from you also gets a copy of these terms or the URL for them above, as well as copies of any plain-text lines beginning with `Required Notice:` that the licensor provided with the software.  For example:
+9. Reserved rights and law
+No rights are granted except those expressly stated. Uses outside this grant
+require prior written permission. These terms are governed by the laws of India,
+subject to applicable mandatory law.
 
-> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
-
-## Changes and New Works License
-
-The licensor grants you an additional copyright license to make changes and new works based on the software for any permitted purpose.
-
-## Patent License
-
-The licensor grants you a patent license for the software that covers patent claims the licensor can license, or becomes able to license, that you would infringe by using the software.
-
-## Noncommercial Purposes
-
-Any noncommercial purpose is a permitted purpose.
-
-## Personal Uses
-
-Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, is use for a permitted purpose.
-
-## Noncommercial Organizations
-
-Use by any charitable organization, educational institution, public research organization, public safety or health organization, environmental protection organization, or government institution is use for a permitted purpose regardless of the source of funding or obligations resulting from the funding.
-
-## Fair Use
-
-You may have "fair use" rights for the software under the law. These terms do not limit them.
-
-## No Other Rights
-
-These terms do not allow you to sublicense or transfer any of your licenses to anyone else, or prevent the licensor from granting licenses to anyone else.  These terms do not imply any other licenses.
-
-## Patent Defense
-
-If you make any written claim that the software infringes or contributes to infringement of any patent, your patent license for the software granted under these terms ends immediately. If your company makes such a claim, your patent license ends immediately for work on behalf of your company.
-
-## Violations
-
-The first time you are notified in writing that you have violated any of these terms, or done anything with the software not covered by your licenses, your licenses can nonetheless continue if you come into full compliance with these terms, and take practical steps to correct past violations, within 32 days of receiving notice.  Otherwise, all your licenses end immediately.
-
-## No Liability
-
-***As far as the law allows, the software comes as is, without any warranty or condition, and the licensor will not be liable to you for any damages arising out of these terms or the use or nature of the software, under any kind of legal claim.***
-
-## Definitions
-
-The **licensor** is the individual or entity offering these terms, and the **software** is the software the licensor makes available under these terms.
-
-**You** refers to the individual or entity agreeing to these terms.
-
-**Your company** is any legal entity, sole proprietorship, or other kind of organization that you work for, plus all organizations that have control over, are under the control of, or are under common control with that organization.  **Control** means ownership of substantially all the assets of an entity, or the power to direct its management and policies by vote, contract, or otherwise.  Control can be direct or indirect.
-
-**Your licenses** are all the licenses granted to you for the software under these terms.
-
-**Use** means anything you do with the software requiring one of your licenses.
-
-Required Notice: Copyright (c) 2026 Arnav Agarwal (https://github.com/Arnav-Agarwal137)
-
-This licence does not cover the folder windows/apo-setup/ (ApoSetup), which is licensed GPL-2.0-or-later: see windows/apo-setup/COPYING and windows/apo-setup/NOTICE.md.
+Specific exception: windows/apo-setup/ (ApoSetup) remains GPL-2.0-or-later.
+See windows/apo-setup/COPYING and NOTICE.md. No commercial or redistribution
+restriction in this licence applies to that separately licensed program.

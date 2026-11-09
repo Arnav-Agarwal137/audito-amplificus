@@ -1,15 +1,26 @@
-# Commercial use
+# Commercial use and distribution permission
 
-Audito Amplificus is licensed under the PolyForm Noncommercial License 1.0.0. That covers personal use, study,
-research, hobby projects, and use by charities, schools and public bodies, free of charge.
+Free noncommercial use and private improvements are permitted for newly licensed original work.
+Share the official links freely. Redistributing copies, publishing modified versions, public mirrors,
+rebranding, and commercial use require Arnav Agarwal's prior written permission.
+Keep authorship and required notices. This is a source-available custom licence, not an open-source licence.
+Earlier licence grants and third-party rights remain in force; see [LICENSE-HISTORY.md](LICENSE-HISTORY.md).
+Previously published source, embedded app notices, tags and downloadable binaries retain their earlier grants;
+this policy does not retroactively prohibit their previously permitted use or distribution.
 
-**Anything commercial needs a separate written licence from the owner, Arnav Agarwal.** For example: selling the app
-or a changed version of it, putting it (or code from it) inside a product or service you sell, or charging for, or
-showing advertising in, a copy you distribute.
 
-To ask, open an issue on the project's GitHub page (github.com/Arnav-Agarwal137) titled "Commercial licence", saying
-who you are and what you want to do. Do not post anything confidential in a public issue; ask for a private way to
-continue.
+The authoritative grant is [LICENSE](LICENSE); earlier rights are explained in
+[LICENSE-HISTORY.md](LICENSE-HISTORY.md). A free download is not permission to sell,
+charge for hosting or access, add advertising, or use newly restricted work commercially.
+
+Open an issue at https://github.com/Arnav-Agarwal137/audito-amplificus/issues titled
+"Licence or distribution permission" describing who you are, what you want to use,
+whether it will be modified, where it will be distributed or hosted, and how money
+or commercial use is involved. Request a private channel for confidential details.
+Only an express written grant from Arnav Agarwal approves an exception.
+
+Third-party components require their own permissions. This project's owner cannot
+relicense someone else's work or override earlier MIT, PolyForm, GPL or other grants.
 
 Note: the karaoke and clean-a-talk features of the laptop app depend on third-party model weights (Demucs,
 DeepFilterNet) whose terms do not allow, or do not clearly allow, commercial use. A commercial licence from this

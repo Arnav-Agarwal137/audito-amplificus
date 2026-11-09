@@ -20,18 +20,17 @@ See [DISCLAIMER.md](DISCLAIMER.md).
 
 ## Licence
 
-Copyright (c) 2026 Arnav Agarwal. Released under the **PolyForm Noncommercial License 1.0.0** ([LICENSE](LICENSE)).
+Free noncommercial use and private improvements are permitted for newly licensed original work.
+Share the official links freely. Redistributing copies, publishing modified versions, public mirrors,
+rebranding, and commercial use require Arnav Agarwal's prior written permission.
+Keep authorship and required notices. This is a source-available custom licence, not an open-source licence.
+Earlier licence grants and third-party rights remain in force; see [LICENSE-HISTORY.md](LICENSE-HISTORY.md).
+Previously published source, embedded app notices, tags and downloadable binaries retain their earlier grants;
+this policy does not retroactively prohibit their previously permitted use or distribution.
 
-In plain words: you may use it, change it and share it, free, for any **non-commercial** purpose. Selling it, putting
-it inside something you sell, or using it to earn money needs a separate licence from the owner - see
-[COMMERCIAL.md](COMMERCIAL.md).
+Full terms: [LICENSE](LICENSE). Permission requests: [GitHub issues](https://github.com/Arnav-Agarwal137/audito-amplificus/issues).
 
-**One exception: `windows/apo-setup/` (ApoSetup) is NOT under that licence.** It is ported from Equalizer APO's code, so
-it is licensed **GPL-2.0-or-later** (its own [COPYING](windows/apo-setup/COPYING) and
-[NOTICE.md](windows/apo-setup/NOTICE.md)). It is a separate program: the laptop app only starts it as its own process.
-
-This is a "source-available" licence, not an OSI "open source" licence, so app stores that list only open-source apps
-(for example F-Droid) will not list it.
+**Exception:** `windows/apo-setup/` remains GPL-2.0-or-later under its own COPYING and NOTICE.md.
 
 ## Build the phone app
 
