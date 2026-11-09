@@ -8,7 +8,7 @@ Audito measures what is playing, adjusts the sound, and lets you teach it what y
 
 **[Download the Android APK](https://github.com/Arnav-Agarwal137/audito-amplificus/releases/download/v0.1.17/Audito-Amplificus-0.1.17.apk) · [Release notes](https://github.com/Arnav-Agarwal137/audito-amplificus/releases/tag/v0.1.17) · [Build for Windows](docs/BUILDING.md#build-the-laptop-app)**
 
-<p align="center"><img src="docs/images/audito-android.png" alt="Audito's Android interface with automatic tuning, listening estimates and simple settings" width="320"></p>
+<p align="center"><img src="docs/images/audito-playing.png" alt="Audito analysing playback and applying automatic bass, warmth and clarity settings" width="320"></p>
 
 *Android development capture. The release's layout may differ slightly.*
 
